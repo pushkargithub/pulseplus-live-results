@@ -1,35 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>PulsePlus Live Results</title>
 
 <style>
 
 body{
-background:#111;
+background:#0f172a;
 color:white;
 font-family:Arial;
-text-align:center;
+margin:0;
 }
 
-.container{
-width:900px;
+.wrapper{
+width:100%;
+max-width:1400px;
 margin:auto;
-margin-top:120px;
+padding:40px;
+}
+
+h1{
+text-align:center;
+font-size:48px;
+margin-bottom:60px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+margin-bottom:30px;
+}
+
+.row{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.symbol{
+width:50px;
+height:50px;
+background:white;
+border-radius:8px;
+padding:5px;
+}
+
+.name{
+font-size:32px;
+font-weight:bold;
+}
+
+.party{
+font-size:18px;
+color:#cbd5e1;
+}
+
+.votes{
+font-size:32px;
+font-weight:bold;
 }
 
 .bar{
-height:40px;
-background:#333;
-margin:25px 0;
-border-radius:10px;
+height:30px;
+background:#334155;
+border-radius:20px;
+margin-top:15px;
 overflow:hidden;
 }
 
 .fill{
 height:100%;
-background:#2ecc71;
-width:60%;
+}
+
+.balen{
+width:55%;
+background:#38bdf8;
+}
+
+.oli{
+width:45%;
+background:#ef4444;
+}
+
+.lead{
+text-align:center;
+font-size:28px;
+margin-top:40px;
 }
 
 </style>
@@ -38,20 +102,58 @@ width:60%;
 
 <body>
 
-<h1>JHAPA 5 LIVE RESULTS</h1>
+<div class="wrapper">
 
-<div class="container">
+<h1>PULSEPLUS LIVE RESULTS</h1>
 
-<h2>BALEN — 45,210</h2>
+<div class="card">
 
-<div class="bar">
-<div class="fill"></div>
+<div class="row">
+
+<div class="left">
+<img src="rsp.png" class="symbol">
+<div>
+<div class="name">Balen Shah</div>
+<div class="party">Rastriya Swatantra Party</div>
+</div>
 </div>
 
-<h2>OLI — 39,842</h2>
+<div class="votes">52,410</div>
+
+</div>
 
 <div class="bar">
-<div class="fill" style="width:40%"></div>
+<div class="fill balen"></div>
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="row">
+
+<div class="left">
+<img src="uml.png" class="symbol">
+<div>
+<div class="name">KP Oli</div>
+<div class="party">CPN-UML</div>
+</div>
+</div>
+
+<div class="votes">48,210</div>
+
+</div>
+
+<div class="bar">
+<div class="fill oli"></div>
+</div>
+
+</div>
+
+
+<div class="lead">
+Lead: Balen Shah +4,200
 </div>
 
 </div>
